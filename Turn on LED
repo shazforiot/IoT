@@ -1,0 +1,8 @@
+import RPi.GPIO as GPIO
+# We are importing the library , which will be telling the python interpreter how to work with Raspberry PI GPIO Pins.
+GPIO.setmode(GPIO.BCM)
+# This will inform on how pin numbering on board to be used.
+GPIO.setup(7, GPIO.OUT)
+# we are setting GPIO Pin 7 as an Out Pin
+GPIO.output(7,True)
+# Setting the GPIO Pin 7 as True will make the GPIO pin 7 to High
